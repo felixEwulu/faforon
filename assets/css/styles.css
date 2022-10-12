@@ -541,9 +541,20 @@ the website, in dark theme
   bottom: 0;
   background-color: var(--first-color);
   color: #FFF;
-  padding: .25rem;
+  padding: .45rem;
   border-radius: .35rem;
-  font-size: var(--normal-font-size);
+  font-size: var(--smaller-font-size);
+}
+
+.product__preview{
+  position: absolute;
+  right: .5rem;
+  bottom: 3rem;
+  background-color: var(--first-color);
+  color: #FFF;
+  padding: .5rem;
+  border-radius: .35rem;
+  font-size: var(--smaller-font-size);
 }
 
 .product__button:hover{
@@ -562,6 +573,41 @@ the website, in dark theme
 
 .product__card:hover .product__img{
   transform: translateY(-.5rem);
+}
+
+.button__container{
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+  row-gap: .975rem;
+
+}
+
+.products__modal{
+  position: fixed;
+  top: 5%;
+  left: 10%;
+  width: 80%;
+  height: 90%;
+background-color: var(--first-color-lighten);
+box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  z-index: 10;
+  border-radius: .35rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 9;
 }
 
 /*=============== QUESTIONS ===============*/
