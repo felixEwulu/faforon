@@ -1,7 +1,14 @@
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
+    navToggle = document.getElementById('nav-toggle'),
+    navClose = document.getElementById('nav-close');
+
+//  Products modal
+const productsContainer = document.querySelector('.product__container'),
+    productsModal = document.querySelectorAll(".products__modal"),
+    previewBtn = document.querySelectorAll(".product__preview"),
+    closeModal = document.querySelectorAll(".close-modal"),
+    overlay = document.querySelectorAll('.overlay');
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
@@ -36,6 +43,33 @@ function scrollHeader(){
     if(this.scrollY >= 80) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
+// Products Modal
+
+const modal = (modalClick) => {
+    productsModal[modalClick].classList.remove('hidden')
+    overlay[modalClick].classList.remove('hidden')
+}
+
+const close = (btn) => {
+    productsModal[btn].classList.add('hidden')
+    overlay[btn].classList.add('hidden')
+}
+
+previewBtn.forEach((mb, i) => {
+    return (
+        mb.addEventListener('click', () => modal(i))
+    )
+})
+
+closeModal.forEach((mc, i) => {
+    return mc.addEventListener("click", () => close(i));
+})
+
+
+
+
+
 
 /*=============== QUESTIONS ACCORDION ===============*/
 const accordionItems = document.querySelectorAll('.questions__item')

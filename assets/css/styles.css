@@ -409,6 +409,11 @@ the website, in dark theme
   column-gap: .5rem;
 }
 
+.button-shop{
+  color: white;
+}
+
+
 .button--link{
   color: var(--first-color);
   font-weight: var(--font-medium);
@@ -594,7 +599,7 @@ the website, in dark theme
   height: 90%;
 background-color: var(--first-color-lighten);
 box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.05);
-  padding: 2rem;
+  padding: 2rem 1rem 0;
   z-index: 10;
   border-radius: .35rem;
 }
@@ -610,6 +615,33 @@ box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.05);
   z-index: 9;
 }
 
+.preview__modal-content{
+  display: grid;
+  row-gap: .5rem;
+  position: relative;
+
+}
+
+.preview__product-list{
+  display: flex;
+  column-gap: .5rem;
+}
+
+.close-modal{
+  font-size: var(--h2-font-size);
+  position: absolute;
+  top: -1rem;
+  right: 0;
+}
+
+.button-shop, .button__icon {
+  color: white;
+  z-index: inherit;
+}
+
+.hidden{
+  display: none;
+}
 /*=============== QUESTIONS ===============*/
 .questions{
   background-color: var(--first-color-lighten);
