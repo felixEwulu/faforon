@@ -236,6 +236,35 @@ the website, in dark theme
   cursor: pointer;
 }
 
+.call-us{
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+    align-items: center;
+    column-gap: .5rem;
+  /* display: inline-block; */
+    color: #FFF;
+    /* padding: 1rem 1.75rem; */
+    /* border-radius: .5rem; */
+    font-weight: var(--font-medium);
+    /* transition: .3s; */
+  position: fixed;
+  bottom: -.2rem;
+  left: 0;
+  border-radius: none;
+  background-color: #ABDF3A;
+  width: 100%;
+}
+
+.call-text{
+  color: #fff;
+  text-align: center;
+  /* align-self: center; */
+  padding: .8rem;
+} 
+
+
+
 @media screen and (max-width: 767px){
   .nav__menu{
     position: fixed;
@@ -302,6 +331,13 @@ the website, in dark theme
   background-color: var(--first-color);
 }
 
+/* .call-us{
+  text-align: center;
+}
+
+
+
+
 /*=============== HOME ===============*/
 .home{
   padding: 3.5rem 0 2rem;
@@ -320,7 +356,7 @@ the website, in dark theme
 
 .home__title{
   font-size: var(--big-font-size);
-  line-height: 140%;
+  line-height: 1.1;
   margin-bottom: var(--mb-1);
 }
 
