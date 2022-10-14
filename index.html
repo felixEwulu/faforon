@@ -444,7 +444,7 @@
                <i class="ri-shopping-bag-line"></i>                 
               BUY NOW
                             </a>
-                            
+
             <button class="button--flex product__preview modal-x">
               <!-- <i class="ri-shopping-bag-line"></i> -->
               Preview
@@ -666,7 +666,7 @@
           <form action="" class="contact__form">
             <div class="contact__inputs">
               <div class="contact__content">
-                <input type="email" placeholder=" " class="contact__input" />
+                <input type="email" placeholder=" " id="email" class="contact__input" required/>
                 <label for="" class="contact__label">Email</label>
               </div>
 
@@ -685,7 +685,7 @@
               </div>
             </div>
 
-            <button class="button button--flex">
+            <button type="submit" class="button button--flex">
               Send Message
               <i class="ri-arrow-right-up-line button__icon"></i>
             </button>
@@ -776,6 +776,7 @@
     <script src="assets/js/scrollreveal.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

@@ -183,3 +183,23 @@ sr.reveal(`.about__data, .contact__form`, { origin: "right" });
 sr.reveal(`.steps__card, .product__card, .questions__group, .footer`, {
   interval: 100,
 });
+
+
+// const form = document.querySelector(".contact__form");
+
+// function sendEmail(e) {
+//     e.preventDefault();
+//     Email.send({
+//       Host: "smtp.gmail.com",
+//       Username: "felixgraphics01",
+//       Password: "Ogochukwu1",
+//       To: "cmekusfelix8@gmail.com",
+//       From: document.getElementById('email').,
+//       Subject: "This is the subject",
+//       Body: "And this is the body",
+//     }).then((message) => alert(message));
+// }
+
+
+// form.addEventListener('submit', sendEmail)
+
